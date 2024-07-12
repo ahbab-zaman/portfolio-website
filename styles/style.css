@@ -133,6 +133,8 @@
   justify-content: center;
   align-items: center;
   padding: 100px 100px;
+  width: 870px;
+  margin: 0 auto;
 }
 .skill-title{
   font: 28px;
@@ -177,6 +179,8 @@
   justify-content: space-around;
   text-align: center;
   padding: 0px 140px;
+  width: 870px;
+  margin: 0 auto;
 }
 .resume-title{
   font-size: 25px;
@@ -270,4 +274,53 @@
   border-radius: 5px;
   font-size: 14px;
   margin: 10px 0px;
+}
+
+/* CSS media queries */
+
+@media screen and (max-width : 576px) {
+  main{
+    width: 100%;
+  }
+  #footer{
+    flex-direction: column;
+    width: 580px;
+  }
+  .contact{
+    width: 100%;
+  }
+  #banner img{
+    width: 290px;
+    height: 300px;
+  }
+  #resume{
+    flex-direction: column;
+    padding: 0px;
+  }
+  .resume-container{
+    display: block;
+  }
+  #about{
+    width: 670px;
+    margin: 0 auto;
+  }
+  #skills{
+    width: 600px;
+    margin: 0 auto;
+  }
+  .skill-title, .skill-description{
+    text-align: center;
+  }
+  .skill-container{
+    flex-direction: column;
+  }
+  #header{
+    width: 870px;
+    background-image: none;
+  }
+  #banner{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
 }
